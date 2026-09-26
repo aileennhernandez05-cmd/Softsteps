@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="t d">
+  <title id="t">soft steps. bow crew pilates socks</title>
+  <desc id="d">A flat lay of two bow crew Pilates socks, one ivory and one rose with bow-shaped grips, beneath a blush arch with a soft steps. hang tag, a latte in a speckled cup and sprigs of baby's breath.</desc>
+
+  <defs>
+    <!-- sock silhouette: leg on the left, toe pointing right -->
+    <path id="sock" d="M0,0 L130,0 L130,262 C130,296 152,318 190,322 L300,330 C346,334 364,360 364,386 C364,414 342,432 304,432 L118,432 C40,432 0,390 0,326 Z"/>
+    <clipPath id="sockClip"><use href="#sock"/></clipPath>
+
+    <!-- little bow -->
+    <symbol id="bow" viewBox="-22 -14 44 34" overflow="visible">
+      <path d="M0,0 C-5,-11 -20,-12 -20,-1 C-20,10 -6,8 0,0 Z"/>
+      <path d="M0,0 C5,-11 20,-12 20,-1 C20,10 6,8 0,0 Z"/>
+      <path d="M-1,2 L-9,17 L-4.5,15.5 L1,4 Z"/>
+      <path d="M1,2 L9,17 L4.5,15.5 L-1,4 Z"/>
+      <ellipse cx="0" cy="0" rx="3.6" ry="4.2"/>
+    </symbol>
+
+    <!-- baby's breath sprig -->
+    <g id="sprig" fill="none" stroke="#B9A89B" stroke-width="1.4" stroke-linecap="round">
+      <path d="M0,0 C8,-40 10,-80 4,-130"/>
+      <path d="M5,-60 C18,-72 28,-86 32,-104"/>
+      <path d="M3,-40 C-10,-54 -20,-66 -26,-86"/>
+      <path d="M8,-95 C18,-104 22,-116 22,-128"/>
+      <g fill="#FFFFFF" stroke="#E6D3CF" stroke-width="0.8">
+        <circle cx="4" cy="-133" r="5"/><circle cx="-2" cy="-139" r="3.6"/><circle cx="10" cy="-140" r="3.8"/>
+        <circle cx="32" cy="-108" r="4.6"/><circle cx="38" cy="-114" r="3.4"/><circle cx="27" cy="-115" r="3.2"/>
+        <circle cx="-26" cy="-90" r="4.6"/><circle cx="-32" cy="-96" r="3.4"/><circle cx="-20" cy="-97" r="3.2"/>
+        <circle cx="22" cy="-132" r="4"/><circle cx="27" cy="-138" r="3"/>
+      </g>
+    </g>
+
+    <!-- four point sparkle -->
+    <path id="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z"/>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="800" height="800" fill="#FBF4F2"/>
+
+  <!-- arch -->
+  <path d="M150,800 L150,340 A250,250 0 0 1 650,340 L650,800 Z" fill="#F4DDE0"/>
+  <path d="M172,800 L172,342 A228,228 0 0 1 628,342 L628,800" fill="none" stroke="#A8606E" stroke-width="1.2" opacity="0.55"/>
+
+  <!-- sparkles -->
+  <g fill="#A8606E">
+    <use href="#spark" transform="translate(400,62) scale(1.1)"/>
+    <use href="#spark" transform="translate(690,150) scale(0.7)" opacity="0.7"/>
+    <use href="#spark" transform="translate(112,470) scale(0.6)" opacity="0.6"/>
+    <use href="#spark" transform="translate(716,460) scale(0.5)" opacity="0.6"/>
+  </g>
+
+  <!-- baby's breath -->
+  <use href="#sprig" transform="translate(96,790) rotate(-18)"/>
+  <use href="#sprig" transform="translate(130,800) rotate(8) scale(0.8)"/>
+  <use href="#sprig" transform="translate(724,300) rotate(200) scale(0.85)"/>
+
+  <!-- rose sock (sole side up, bow grips) -->
+  <g transform="translate(618,150) rotate(8) scale(-0.9,0.9)">
+    <use href="#sock" transform="translate(-6,8)" fill="#8A4A57" opacity="0.18"/>
+    <use href="#sock" fill="#A8606E"/>
+    <g clip-path="url(#sockClip)">
+      <!-- cuff ribbing -->
+      <rect x="0" y="0" width="130" height="54" fill="#9A5664"/>
+      <g stroke="#8A4A57" stroke-width="1.6" opacity="0.7">
+        <path d="M10,4 V52 M22,4 V52 M34,4 V52 M46,4 V52 M58,4 V52 M70,4 V52 M82,4 V52 M94,4 V52 M106,4 V52 M118,4 V52"/>
+      </g>
+      <!-- bow grips across the sole -->
+      <g fill="#F4DDE0">
+        <use href="#bow" x="20" y="342" width="30" height="23"/>
+        <use href="#bow" x="72" y="340" width="30" height="23"/>
+        <use href="#bow" x="124" y="344" width="30" height="23"/>
+        <use href="#bow" x="176" y="346" width="30" height="23"/>
+        <use href="#bow" x="228" y="348" width="30" height="23"/>
+        <use href="#bow" x="280" y="352" width="30" height="23"/>
+        <use href="#bow" x="44" y="386" width="30" height="23"/>
+        <use href="#bow" x="96" y="388" width="30" height="23"/>
+        <use href="#bow" x="148" y="390" width="30" height="23"/>
+        <use href="#bow" x="200" y="390" width="30" height="23"/>
+        <use href="#bow" x="252" y="390" width="30" height="23"/>
+        <use href="#bow" x="304" y="388" width="30" height="23"/>
+        <use href="#bow" x="30" y="290" width="30" height="23"/>
+        <use href="#bow" x="82" y="292" width="30" height="23"/>
+      </g>
+      <!-- heel + toe panels -->
+      <path d="M0,326 C0,390 40,432 118,432 L118,432 C70,420 40,390 36,330 Z" fill="#8A4A57" opacity="0.25"/>
+    </g>
+    <use href="#sock" fill="none" stroke="#8A4A57" stroke-width="1.5"/>
+  </g>
+
+  <!-- ivory sock (bow on the cuff) -->
+  <g transform="translate(190,318) rotate(-7) scale(0.9)">
+    <use href="#sock" transform="translate(6,8)" fill="#8A4A57" opacity="0.14"/>
+    <use href="#sock" fill="#FFFDFB"/>
+    <g clip-path="url(#sockClip)">
+      <rect x="0" y="0" width="130" height="54" fill="#F8F0EC"/>
+      <g stroke="#EBD6D8" stroke-width="1.6">
+        <path d="M10,4 V52 M22,4 V52 M34,4 V52 M46,4 V52 M58,4 V52 M70,4 V52 M82,4 V52 M94,4 V52 M106,4 V52 M118,4 V52"/>
+      </g>
+      <!-- heel + toe panels -->
+      <path d="M0,326 C0,390 40,432 118,432 C70,414 46,380 44,322 C30,322 12,324 0,326 Z" fill="#F8ECEC"/>
+      <path d="M304,330 C346,334 364,360 364,386 C364,414 342,432 304,432 C322,410 324,356 304,330 Z" fill="#F8ECEC"/>
+    </g>
+    <use href="#sock" fill="none" stroke="#EBD6D8" stroke-width="1.6"/>
+    <!-- satin bow on the cuff -->
+    <g fill="#A8606E">
+      <use href="#bow" x="30" y="44" width="70" height="54"/>
+    </g>
+    <g fill="#F4DDE0" opacity="0.55">
+      <path d="M53,58 C51,54 47,53 44,55 C47,55 50,56 53,58 Z"/>
+      <path d="M77,58 C79,54 83,53 86,55 C83,55 80,56 77,58 Z"/>
+    </g>
+  </g>
+
+  <!-- hang tag + satin ribbon -->
+  <path d="M203,134 C250,170 214,250 250,300 C262,318 262,338 262,350" fill="none" stroke="#A8606E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M203,134 C236,160 262,176 284,214" fill="none" stroke="#C98894" stroke-width="2" stroke-linecap="round"/>
+  <g transform="translate(58,110) rotate(-12)">
+    <rect x="3" y="5" width="150" height="104" rx="6" fill="#8A4A57" opacity="0.12"/>
+    <rect x="0" y="0" width="150" height="104" rx="6" fill="#FFFDFB" stroke="#EBD6D8" stroke-width="1.2"/>
+    <circle cx="136" cy="52" r="6" fill="#FBF4F2" stroke="#EBD6D8" stroke-width="1.2"/>
+    <text x="62" y="54" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="600" fill="#4A3B3E">soft steps.</text>
+    <line x1="30" y1="66" x2="94" y2="66" stroke="#EBD6D8" stroke-width="1"/>
+    <text x="62" y="82" text-anchor="middle" font-family="'DM Sans', Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.2" fill="#6B5559">MOVE WITH GRACE</text>
+  </g>
+
+  <g fill="#A8606E"><use href="#bow" x="191" y="124" width="26" height="20"/></g>
+
+  <!-- latte in a speckled cup -->
+  <g transform="translate(688,694)">
+    <ellipse cx="6" cy="8" rx="64" ry="62" fill="#8A4A57" opacity="0.12"/>
+    <path d="M52,-18 C82,-24 92,10 58,14" fill="none" stroke="#F1E6E0" stroke-width="11" stroke-linecap="round"/>
+    <circle r="62" fill="#F1E6E0"/>
+    <circle r="62" fill="none" stroke="#E4D3CB" stroke-width="1.2"/>
+    <g fill="#8C7466" opacity="0.55">
+      <circle cx="-44" cy="-20" r="1.3"/><circle cx="-38" cy="30" r="1.1"/><circle cx="46" cy="-30" r="1.2"/>
+      <circle cx="30" cy="46" r="1.3"/><circle cx="-12" cy="-54" r="1"/><circle cx="52" cy="14" r="1"/>
+      <circle cx="-52" cy="6" r="1.1"/><circle cx="-24" cy="50" r="1.2"/><circle cx="16" cy="-56" r="1.2"/>
+    </g>
+    <circle r="46" fill="#B8927F"/>
+    <!-- latte art heart -->
+    <path d="M0,20 C-26,4 -24,-18 -10,-18 C-4,-18 -1,-13 0,-9 C1,-13 4,-18 10,-18 C24,-18 26,4 0,20 Z" fill="#FBF4F2" opacity="0.92"/>
+  </g>
+</svg>

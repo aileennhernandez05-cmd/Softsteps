@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the bow collection · soft steps.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* soft steps. luxe showcase — copy the <section> and this CSS into your site */
+    :root {
+      --rose: #A8606E;
+      --deep-rose: #8A4A57;
+      --blush: #F4DDE0;
+      --cream: #FBF4F2;
+      --white: #FFFFFF;
+      --cocoa: #4A3B3E;
+      --soft-cocoa: #6B5559;
+      --petal: #EBD6D8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--cocoa);
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    .ss-luxe {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 72px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .ss-luxe__eyebrow {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin: 0 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ss-luxe__eyebrow::before {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: var(--rose);
+    }
+    .ss-luxe h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(44px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      margin: 0 0 24px;
+    }
+    .ss-luxe h2 em {
+      font-style: italic;
+      color: var(--rose);
+    }
+    .ss-luxe__lede {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--soft-cocoa);
+      max-width: 440px;
+      margin: 0 0 32px;
+    }
+    .ss-luxe__details {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 36px;
+      border-top: 1px solid var(--petal);
+      max-width: 440px;
+    }
+    .ss-luxe__details li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--petal);
+      font-size: 15px;
+    }
+    .ss-luxe__details span:last-child {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--cocoa);
+    }
+    .ss-luxe__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+    .ss-luxe__btn {
+      display: inline-block;
+      padding: 16px 34px;
+      border-radius: 999px;
+      background: var(--rose);
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      transition: background 0.25s ease;
+    }
+    .ss-luxe__btn:hover { background: var(--deep-rose); }
+    .ss-luxe__link {
+      color: var(--cocoa);
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-bottom: 1px solid var(--petal);
+      padding-bottom: 3px;
+    }
+    .ss-luxe__link:hover { border-color: var(--rose); }
+
+    .ss-luxe__visual {
+      position: relative;
+      margin: 0;
+      padding: 14px;
+      background: var(--white);
+      border: 1px solid var(--petal);
+      border-radius: 4px;
+      box-shadow: 0 30px 60px -30px rgba(138, 74, 87, 0.28);
+    }
+    .ss-luxe__visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .ss-luxe__visual figcaption {
+      position: absolute;
+      left: 36px;
+      bottom: -26px;
+      background: var(--white);
+      padding: 12px 18px;
+      border-radius: 2px;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--soft-cocoa);
+      box-shadow: 0 10px 24px -14px rgba(138, 74, 87, 0.35);
+    }
+    .ss-luxe__visual figcaption strong {
+      display: block;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--cocoa);
+      margin-top: 2px;
+    }
+
+    @media (max-width: 860px) {
+      .ss-luxe {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 48px 16px;
+      }
+      .ss-luxe__visual { order: -1; margin-bottom: 16px; }
+      .ss-luxe__visual figcaption { left: 24px; bottom: -24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="ss-luxe" aria-labelledby="ss-luxe-title">
+    <div class="ss-luxe__copy">
+      <p class="ss-luxe__eyebrow">move with grace</p>
+      <h2 id="ss-luxe-title">the bow collection, <em>softly luxe</em></h2>
+      <p class="ss-luxe__lede">
+        little satin bows on the cuff, bow-shaped grips underneath.
+        made for steady footwork on the reformer and slow coffee after class.
+      </p>
+      <ul class="ss-luxe__details">
+        <li><span>1 pair</span><span>$22</span></li>
+        <li><span>any 3 pairs</span><span>$60</span></li>
+        <li><span>any 5 pairs</span><span>$90</span></li>
+      </ul>
+      <div class="ss-luxe__actions">
+        <a class="ss-luxe__btn" href="#shop">shop the collection</a>
+        <a class="ss-luxe__link" href="#bundles">mix &amp; match any styles</a>
+      </div>
+    </div>
+
+    <figure class="ss-luxe__visual">
+      <img src="assets/pilates-socks-luxe.svg" width="800" height="800"
+           alt="soft steps. bow crew Pilates socks in ivory and rose with bow grips, styled with a hang tag, a latte and baby's breath">
+      <figcaption>new in <strong>bow crew · ivory &amp; rose</strong></figcaption>
+    </figure>
+  </section>
+
+</body>
+</html>
