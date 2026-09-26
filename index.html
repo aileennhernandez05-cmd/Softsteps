@@ -32,8 +32,9 @@
       <nav class="nav">
         <a href="#shop" data-t="nShop"></a>
         <a href="#deals" data-t="nBundles"></a>
-        <a href="#reviews" data-t="nReviews"></a>
-        <a href="#partners" data-t="nPartners"></a>
+        <!-- Unhide these two links (remove "hidden") when reviews and partner perks are ready -->
+        <a href="#reviews" data-t="nReviews" hidden></a>
+        <a href="#partners" data-t="nPartners" hidden></a>
         <a href="#faq" data-t="nFaq"></a>
         <button type="button" class="bag-btn" data-action="open-cart" data-t-aria="openBag">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
@@ -121,7 +122,8 @@
     </section>
 
     <!-- Reviews -->
-    <section id="reviews" class="wrap reviews">
+    <!-- Hidden until you have real reviews: remove "hidden" to show -->
+    <section id="reviews" class="wrap reviews" hidden>
       <h2 class="serif section-title"><span data-t="lovedA"></span><em data-t="lovedB"></em></h2>
       <div class="review-grid">
         <figure class="review">
@@ -143,7 +145,8 @@
     </section>
 
     <!-- Partners -->
-    <section id="partners" class="partners">
+    <!-- Hidden until wholesale terms, ambassador perks and a form service are ready: remove "hidden" to show -->
+    <section id="partners" class="partners" hidden>
       <div class="partners-inner">
         <div class="partners-head">
           <span class="label" data-t="partnerLabel"></span>
@@ -169,9 +172,10 @@
     <section id="faq" class="faq">
       <h2 class="serif section-title" data-t="questions"></h2>
       <details><summary data-t="faq1q"></summary><p class="muted" data-t="faq1a"></p></details>
-      <details><summary data-t="faq2q"></summary><p class="muted" data-t="faq2a"></p></details>
-      <details><summary data-t="faq3q"></summary><p class="muted">[YOUR CARE INSTRUCTIONS]</p></details>
-      <details class="last"><summary data-t="faq4q"></summary><p class="muted">[YOUR SHIPPING INFO]</p></details>
+      <details class="last"><summary data-t="faq2q"></summary><p class="muted" data-t="faq2a"></p></details>
+      <!-- Hidden until care and shipping info are filled in: remove "hidden" to show -->
+      <details hidden><summary data-t="faq3q"></summary><p class="muted">[YOUR CARE INSTRUCTIONS]</p></details>
+      <details class="last" hidden><summary data-t="faq4q"></summary><p class="muted">[YOUR SHIPPING INFO]</p></details>
     </section>
   </main>
 
@@ -179,7 +183,8 @@
   <footer class="footer">
     <span class="serif footer-name">soft steps.</span>
     <span class="logo-tag">move with grace</span>
-    <span class="muted small13">[YOUR EMAIL / INSTAGRAM]</span>
+    <!-- Add your email / Instagram here, then remove "hidden" -->
+    <span class="muted small13" hidden>[YOUR EMAIL / INSTAGRAM]</span>
   </footer>
 
   <!-- Welcome offer tab, popup, filter panel, photo viewer and bag are drawn by app.js -->

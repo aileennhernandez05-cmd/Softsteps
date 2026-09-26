@@ -13,6 +13,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -295,6 +296,7 @@ em { font-style: italic; }
 .sum.save { color: var(--rose); }
 .sum.total { font-size: 18px; font-weight: 500; color: var(--cocoa); }
 .drawer.right .pill { margin-top: 6px; min-height: 52px; }
+.checkout-soon { margin: 6px 0 0; padding: 14px; border-radius: 999px; background: var(--blush); text-align: center; font-size: 13px; letter-spacing: 0.08em; }
 
 /* Phones */
 @media (max-width: 640px) {
