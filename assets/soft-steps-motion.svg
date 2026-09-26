@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-labelledby="t">
+  <title id="t">soft steps. socks swaying on a satin ribbon while little bows float up</title>
+  <style>
+    .ribbon { stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw 1.8s cubic-bezier(.6,.05,.3,1) both; }
+    .ribbon.hi { animation-delay: .15s; }
+    @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+
+    .clip { transform-box: fill-box; transform-origin: 50% 50%; animation: pop .6s cubic-bezier(.3,1.6,.5,1) both; }
+    .c1 { animation-delay: 1.3s; } .c2 { animation-delay: 1.5s; } .c3 { animation-delay: 1.7s; }
+    @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+
+    .drop { animation: drop 1.1s cubic-bezier(.2,.9,.25,1) both; }
+    .d1 { animation-delay: 1.2s; } .d2 { animation-delay: 1.4s; } .d3 { animation-delay: 1.6s; }
+    @keyframes drop { from { transform: translateY(-60px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+    .sway { transform-box: fill-box; transform-origin: 17.86% 0; animation: sway 4.8s ease-in-out infinite alternate; }
+    .s1 { animation-delay: -1.1s; } .s2 { animation-delay: -3.2s; animation-duration: 5.4s; } .s3 { animation-delay: -.4s; animation-duration: 5s; }
+    @keyframes sway { from { transform: rotate(-3.2deg); } to { transform: rotate(3.2deg); } }
+
+    .float { opacity: 0; transform-box: fill-box; transform-origin: 50% 50%; animation: float linear infinite; }
+    @keyframes float {
+      0%   { transform: translate(0, 0) rotate(-12deg); opacity: 0; }
+      12%  { opacity: .75; }
+      50%  { transform: translate(18px, -280px) rotate(10deg); }
+      85%  { opacity: .55; }
+      100% { transform: translate(-10px, -560px) rotate(-8deg); opacity: 0; }
+    }
+
+    .spark { fill: #A8606E; transform-box: fill-box; transform-origin: 50% 50%; animation: twinkle 3.2s ease-in-out infinite; }
+    @keyframes twinkle { 0%, 100% { transform: scale(.4); opacity: .2; } 50% { transform: scale(1); opacity: .9; } }
+
+    .sprig { transform-box: fill-box; transform-origin: 50% 100%; animation: breeze 6s ease-in-out infinite alternate; }
+    .sprig.b { animation-delay: -2.5s; animation-duration: 7s; }
+    @keyframes breeze { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .float { opacity: 0; }
+    }
+  </style>
+  <defs>
+    <clipPath id="sc"><path d="M0,0 L130,0 L130,262 C130,296 152,318 190,322 L300,330 C346,334 364,360 364,386 C364,414 342,432 304,432 L118,432 C40,432 0,390 0,326 Z"/></clipPath>
+    <symbol id="bow" viewBox="-22 -14 44 34" overflow="visible">
+      <path d="M0,0 C-5,-11 -20,-12 -20,-1 C-20,10 -6,8 0,0 Z"/>
+      <path d="M0,0 C5,-11 20,-12 20,-1 C20,10 6,8 0,0 Z"/>
+      <path d="M-1,2 L-9,17 L-4.5,15.5 L1,4 Z"/>
+      <path d="M1,2 L9,17 L4.5,15.5 L-1,4 Z"/>
+      <ellipse cx="0" cy="0" rx="3.6" ry="4.2"/>
+    </symbol>
+    <g id="sprigShape" fill="none" stroke="#B9A89B" stroke-width="1.4" stroke-linecap="round">
+      <path d="M0,0 C8,-40 10,-80 4,-130"/>
+      <path d="M5,-60 C18,-72 28,-86 32,-104"/>
+      <path d="M3,-40 C-10,-54 -20,-66 -26,-86"/>
+      <path d="M8,-95 C18,-104 22,-116 22,-128"/>
+      <g fill="#FFFFFF" stroke="#E6D3CF" stroke-width="0.8">
+        <circle cx="4" cy="-133" r="5"/><circle cx="-2" cy="-139" r="3.6"/><circle cx="10" cy="-140" r="3.8"/>
+        <circle cx="32" cy="-108" r="4.6"/><circle cx="38" cy="-114" r="3.4"/><circle cx="27" cy="-115" r="3.2"/>
+        <circle cx="-26" cy="-90" r="4.6"/><circle cx="-32" cy="-96" r="3.4"/><circle cx="-20" cy="-97" r="3.2"/>
+        <circle cx="22" cy="-132" r="4"/><circle cx="27" cy="-138" r="3"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- blush arch -->
+  <path d="M390,540 L390,300 A210,210 0 0 1 810,300 L810,540 Z" fill="#F4DDE0"/>
+  <path d="M410,540 L410,302 A190,190 0 0 1 790,302 L790,540" fill="none" stroke="#A8606E" stroke-width="1.2" opacity="0.45"/>
+
+  <!-- sparkles -->
+  <g transform="translate(600,40) scale(1.2)"><path class="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z" style="animation-delay:-0s"/></g><g transform="translate(150,70) scale(0.8)"><path class="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z" style="animation-delay:-1.2s"/></g><g transform="translate(1050,60) scale(0.9)"><path class="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z" style="animation-delay:-2.1s"/></g><g transform="translate(400,470) scale(0.6)"><path class="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z" style="animation-delay:-0.6s"/></g><g transform="translate(930,450) scale(0.7)"><path class="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z" style="animation-delay:-1.8s"/></g><g transform="translate(720,95) scale(0.55)"><path class="spark" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9 Z" style="animation-delay:-2.7s"/></g>
+
+  <!-- floating bows -->
+  <g transform="translate(120,550)"><use class="float" href="#bow" x="-11.0" y="-8.8" width="22" height="16.9" fill="#D9A3AD" style="animation-duration:15s;animation-delay:-0s"/></g><g transform="translate(300,550)"><use class="float" href="#bow" x="-8.0" y="-6.4" width="16" height="12.3" fill="#A8606E" style="animation-duration:18s;animation-delay:-4s"/></g><g transform="translate(430,550)"><use class="float" href="#bow" x="-13.0" y="-10.4" width="26" height="20.0" fill="#E6BEC5" style="animation-duration:16s;animation-delay:-9s"/></g><g transform="translate(660,550)"><use class="float" href="#bow" x="-9.0" y="-7.2" width="18" height="13.9" fill="#D9A3AD" style="animation-duration:17s;animation-delay:-2s"/></g><g transform="translate(760,550)"><use class="float" href="#bow" x="-12.0" y="-9.600000000000001" width="24" height="18.5" fill="#A8606E" style="animation-duration:14s;animation-delay:-7s"/></g><g transform="translate(980,550)"><use class="float" href="#bow" x="-10.0" y="-8.0" width="20" height="15.4" fill="#E6BEC5" style="animation-duration:19s;animation-delay:-5s"/></g><g transform="translate(1090,550)"><use class="float" href="#bow" x="-8.0" y="-6.4" width="16" height="12.3" fill="#D9A3AD" style="animation-duration:16s;animation-delay:-11s"/></g><g transform="translate(40,550)"><use class="float" href="#bow" x="-9.0" y="-7.2" width="18" height="13.9" fill="#A8606E" style="animation-duration:17s;animation-delay:-13s"/></g><g transform="translate(560,550)"><use class="float" href="#bow" x="-7.0" y="-5.6000000000000005" width="14" height="10.8" fill="#D9A3AD" style="animation-duration:20s;animation-delay:-15s"/></g>
+
+  <!-- baby's breath -->
+  <g transform="translate(70,540) rotate(-10)"><use class="sprig" href="#sprigShape"/></g>
+  <g transform="translate(1130,540) scale(-1,1) rotate(-10)"><use class="sprig b" href="#sprigShape"/></g>
+
+  <!-- satin ribbon -->
+  <path class="ribbon" pathLength="1" d="M60,110 Q600,250 1140,110" fill="none" stroke="#A8606E" stroke-width="3.2" stroke-linecap="round"/>
+  <path class="ribbon hi" pathLength="1" d="M60,108 Q600,248 1140,108" fill="none" stroke="#D9A3AD" stroke-width="1.2" stroke-linecap="round"/>
+  <use href="#bow" x="44" y="98" width="32" height="25" fill="#A8606E"/>
+  <use href="#bow" x="1124" y="98" width="32" height="25" fill="#A8606E"/>
+
+  <!-- socks -->
+  <g transform="translate(245.0,145.7)">
+    <g class="drop d1">
+      <g class="sway s1">
+        <g transform="scale(0.6) translate(-65,0)">
+      <path d="M0,0 L130,0 L130,262 C130,296 152,318 190,322 L300,330 C346,334 364,360 364,386 C364,414 342,432 304,432 L118,432 C40,432 0,390 0,326 Z" fill="#FFFDFB" stroke="#EBD6D8" stroke-width="2"/>
+      <g clip-path="url(#sc)">
+        <rect width="130" height="56" fill="#F8F0EC"/>
+        <path d="M12,6 V52 M24,6 V52 M36,6 V52 M48,6 V52 M60,6 V52 M72,6 V52 M84,6 V52 M96,6 V52 M108,6 V52 M120,6 V52" stroke="#EBD6D8" stroke-width="2"/>
+        <path d="M0,326 C0,390 40,432 118,432 C70,414 46,380 44,322 Z" fill="#F8ECEC"/>
+        <path d="M304,330 C346,334 364,360 364,386 C364,414 342,432 304,432 C322,410 324,356 304,330 Z" fill="#F8ECEC"/>
+      </g>
+      <use href="#bow" x="30" y="46" width="70" height="54" fill="#A8606E"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(535.0,175.0)">
+    <g class="drop d2">
+      <g class="sway s2">
+        <g transform="scale(0.6) translate(-65,0)">
+      <path d="M0,0 L130,0 L130,262 C130,296 152,318 190,322 L300,330 C346,334 364,360 364,386 C364,414 342,432 304,432 L118,432 C40,432 0,390 0,326 Z" fill="#A8606E" stroke="#8A4A57" stroke-width="2"/>
+      <g clip-path="url(#sc)">
+        <rect width="130" height="56" fill="#9A5664"/>
+        <path d="M12,6 V52 M24,6 V52 M36,6 V52 M48,6 V52 M60,6 V52 M72,6 V52 M84,6 V52 M96,6 V52 M108,6 V52 M120,6 V52" stroke="#8A4A57" stroke-width="2" opacity="0.7"/>
+        <g fill="#F4DDE0"><use href="#bow" x="150" y="340" width="30" height="23"/><use href="#bow" x="200" y="344" width="30" height="23"/><use href="#bow" x="250" y="348" width="30" height="23"/><use href="#bow" x="90" y="380" width="30" height="23"/><use href="#bow" x="140" y="392" width="30" height="23"/><use href="#bow" x="190" y="394" width="30" height="23"/><use href="#bow" x="240" y="394" width="30" height="23"/><use href="#bow" x="290" y="392" width="30" height="23"/><use href="#bow" x="40" y="386" width="30" height="23"/></g>
+      </g>
+      <use href="#bow" x="38" y="50" width="54" height="42" fill="#FFFDFB"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(825.0,163.8)">
+    <g class="drop d3">
+      <g class="sway s3">
+        <g transform="scale(0.6) translate(-65,0)">
+      <path d="M0,0 L130,0 L130,262 C130,296 152,318 190,322 L300,330 C346,334 364,360 364,386 C364,414 342,432 304,432 L118,432 C40,432 0,390 0,326 Z" fill="#F4DDE0" stroke="#E2BFC6" stroke-width="2"/>
+      <g clip-path="url(#sc)">
+        <rect width="130" height="44" fill="#FFFDFB"/>
+        <g fill="#C98894" stroke="#A8606E" stroke-width="1.5"><circle cx="12" cy="70" r="12"/><circle cx="27" cy="70" r="12"/><circle cx="42" cy="70" r="12"/><circle cx="57" cy="70" r="12"/><circle cx="72" cy="70" r="12"/><circle cx="87" cy="70" r="12"/><circle cx="102" cy="70" r="12"/><circle cx="117" cy="70" r="12"/></g>
+        <g fill="#FFFDFB" stroke="#E2BFC6" stroke-width="1.5"><circle cx="14" cy="52" r="14"/><circle cx="31" cy="52" r="14"/><circle cx="48" cy="52" r="14"/><circle cx="65" cy="52" r="14"/><circle cx="82" cy="52" r="14"/><circle cx="99" cy="52" r="14"/><circle cx="116" cy="52" r="14"/></g>
+        <g fill="#A8606E" opacity="0.9"><use href="#bow" x="150" y="344" width="28" height="21"/><use href="#bow" x="210" y="348" width="28" height="21"/><use href="#bow" x="270" y="352" width="28" height="21"/><use href="#bow" x="110" y="390" width="28" height="21"/><use href="#bow" x="170" y="394" width="28" height="21"/><use href="#bow" x="230" y="394" width="28" height="21"/></g>
+      </g>
+      <use href="#bow" x="40" y="96" width="50" height="39" fill="#A8606E"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- bow clips -->
+  <use class="clip c1" href="#bow" x="228.0" y="133.7" width="34" height="26" fill="#A8606E"/>
+  <use class="clip c2" href="#bow" x="518.0" y="163.0" width="34" height="26" fill="#A8606E"/>
+  <use class="clip c3" href="#bow" x="808.0" y="151.8" width="34" height="26" fill="#A8606E"/>
+  
+</svg>
