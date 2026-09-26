@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>soft steps. Pilates socks</title>
+  <meta name="description" content="soft steps. Pilates grip socks with little bows and bow-shaped grips. Any 3 pairs for $60, any 5 for $90.">
+  <meta property="og:title" content="soft steps. Pilates socks">
+  <meta property="og:description" content="little bows, big grip. move with grace.">
+  <meta property="og:image" content="images/bow-slouch-blush.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ribbon -->
+  <div class="ribbon" id="ribbon"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <button type="button" class="lang-btn" data-action="toggle-lang" id="lang-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+        <span id="lang-label">ES</span>
+      </button>
+      <a href="#top" class="logo">
+        <span class="logo-name">soft steps.</span>
+        <span class="logo-tag">move with grace</span>
+      </a>
+      <nav class="nav">
+        <a href="#shop" data-t="nShop"></a>
+        <a href="#deals" data-t="nBundles"></a>
+        <a href="#reviews" data-t="nReviews"></a>
+        <a href="#partners" data-t="nPartners"></a>
+        <a href="#faq" data-t="nFaq"></a>
+        <button type="button" class="bag-btn" data-action="open-cart" data-t-aria="openBag">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span id="bag-label"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="top" class="hero wrap">
+      <div class="hero-copy">
+        <div class="label" data-t="heroLabel"></div>
+        <h1 class="serif hero-title"><span data-t="heroA"></span><em data-t="heroB"></em></h1>
+        <p class="muted hero-p" data-t="heroP"></p>
+        <div class="hero-ctas">
+          <a href="#shop" class="pill pill-dark" data-t="ctaShop"></a>
+          <a href="#deals" class="pill pill-blush" data-t="cta3"></a>
+        </div>
+      </div>
+      <div class="hero-imgs">
+        <img src="images/bow-slouch-blush.jpg" data-t-alt="altHero1" class="arch" style="aspect-ratio: 3 / 4">
+        <img src="images/ruffle-cocoa-pink.jpg" data-t-alt="altHero2" class="arch" style="aspect-ratio: 3 / 4.4">
+        <img src="images/ruffle-sky-ivory.jpg" data-t-alt="altHero3" class="arch" style="aspect-ratio: 3 / 4">
+      </div>
+    </section>
+
+    <!-- Key points -->
+    <section class="wrap points">
+      <div class="point"><span class="serif point-title" data-t="pt1"></span><span class="muted" data-t="pt1s"></span></div>
+      <div class="point"><span class="serif point-title" data-t="pt2"></span><span class="muted" data-t="pt2s"></span></div>
+      <div class="point"><span class="serif point-title" data-t="pt3"></span><span class="muted" data-t="pt3s"></span></div>
+    </section>
+
+    <!-- Signature ruffle -->
+    <section id="signature" class="wrap signature-wrap">
+      <div class="signature">
+        <div class="sig-imgs">
+          <img src="images/ruffle-baby-blue.jpg" data-t-alt="sigAlt1" class="arch" style="aspect-ratio: 3 / 4.2">
+          <img src="images/ruffle-peach-ivory.jpg" data-t-alt="sigAlt2" class="arch" style="aspect-ratio: 3 / 3.6">
+        </div>
+        <div class="sig-copy">
+          <span class="label" data-t="sigLabel"></span>
+          <h2 class="serif sig-title"><span data-t="sigA"></span><em data-t="sigB"></em></h2>
+          <p class="muted" data-t="sigP"></p>
+          <ul class="sig-list">
+            <li>🎀 <span data-t="sig1"></span></li>
+            <li>🎀 <span data-t="sig2"></span></li>
+            <li>🎀 <span data-t="sig3"></span></li>
+          </ul>
+          <a href="#shop" class="pill pill-dark" data-action="shop-ruffles" data-t="sigCta"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="wrap shop">
+      <h2 class="serif section-title"><span data-t="colA"></span><em data-t="colB"></em></h2>
+      <div id="shop-dynamic" class="shop-dynamic"></div>
+    </section>
+
+    <!-- Bundles -->
+    <section id="deals" class="deals">
+      <div class="deals-inner">
+        <h2 class="serif deals-title"><span data-t="mixA"></span><em data-t="mixB"></em></h2>
+        <div class="price-table">
+          <div><span class="price-label" data-t="onePair"></span><span class="serif price-big">$22</span></div>
+          <div class="mid"><span class="price-label rose" data-t="any3"></span><span class="serif price-big">$60</span><span class="small muted" data-t="save6"></span></div>
+          <div><span class="price-label rose" data-t="any5"></span><span class="serif price-big">$90</span><span class="small muted" data-t="save20"></span></div>
+        </div>
+        <p class="muted small14" data-t="dealsAuto"></p>
+        <h3 class="serif ready-title"><span data-t="readyA"></span><em data-t="readyB"></em></h3>
+        <div id="bundles" class="bundles"></div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="wrap reviews">
+      <h2 class="serif section-title"><span data-t="lovedA"></span><em data-t="lovedB"></em></h2>
+      <div class="review-grid">
+        <figure class="review">
+          <span class="stars" data-t-aria="stars" role="img">★★★★★</span>
+          <blockquote class="serif">[CUSTOMER REVIEW]</blockquote>
+          <figcaption>[NAME] · [SOCK STYLE]</figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" data-t-aria="stars" role="img">★★★★★</span>
+          <blockquote class="serif">[CUSTOMER REVIEW]</blockquote>
+          <figcaption>[NAME] · [SOCK STYLE]</figcaption>
+        </figure>
+        <figure class="review">
+          <span class="stars" data-t-aria="stars" role="img">★★★★★</span>
+          <blockquote class="serif">[CUSTOMER REVIEW]</blockquote>
+          <figcaption>[NAME] · [SOCK STYLE]</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="partners">
+      <div class="partners-inner">
+        <div class="partners-head">
+          <span class="label" data-t="partnerLabel"></span>
+          <h2 class="serif partners-title"><span data-t="bringA"></span><em data-t="bringB"></em></h2>
+        </div>
+        <div class="partner-cards">
+          <div class="partner-card">
+            <h3 class="serif" data-t="forStudios"></h3>
+            <p class="muted" data-t="studiosP"></p>
+            <p class="muted">[YOUR WHOLESALE TERMS]</p>
+          </div>
+          <div class="partner-card">
+            <h3 class="serif" data-t="forInstr"></h3>
+            <p class="muted" data-t="instrP"></p>
+            <p class="muted">[YOUR AMBASSADOR PERKS]</p>
+          </div>
+        </div>
+        <div id="partner-box" class="partner-box"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <h2 class="serif section-title" data-t="questions"></h2>
+      <details><summary data-t="faq1q"></summary><p class="muted" data-t="faq1a"></p></details>
+      <details><summary data-t="faq2q"></summary><p class="muted" data-t="faq2a"></p></details>
+      <details><summary data-t="faq3q"></summary><p class="muted">[YOUR CARE INSTRUCTIONS]</p></details>
+      <details class="last"><summary data-t="faq4q"></summary><p class="muted">[YOUR SHIPPING INFO]</p></details>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="serif footer-name">soft steps.</span>
+    <span class="logo-tag">move with grace</span>
+    <span class="muted small13">[YOUR EMAIL / INSTAGRAM]</span>
+  </footer>
+
+  <!-- Welcome offer tab, popup, filter panel, photo viewer and bag are drawn by app.js -->
+  <div id="promo-tab"></div>
+  <div id="overlays"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
